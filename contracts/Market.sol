@@ -27,6 +27,7 @@ contract NFTMarket is ReentrancyGuard {
     address payable owner;
     uint256 price;
     uint256 commission;
+    uint256 advertiseScore;
     bool sold;
   }
 
@@ -40,6 +41,7 @@ contract NFTMarket is ReentrancyGuard {
     address owner,
     uint256 price,
     uint256 commission,
+    uint256 advertiseScore,
     bool sold
   );
 
@@ -69,6 +71,7 @@ contract NFTMarket is ReentrancyGuard {
       payable(address(0)),
       price,
       commission,
+      0,
       false
     );
 
@@ -82,6 +85,7 @@ contract NFTMarket is ReentrancyGuard {
       address(0),
       price,
       commission,
+      0,
       false
     );
   }
