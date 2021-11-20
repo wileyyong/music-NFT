@@ -5,7 +5,9 @@ export default function ItemDetail() {
   const router = useRouter();
   const [nftId, setNftId] = useState(0);
   useEffect(() => {
-    setNftId(router.query.id);
+    if (router && router.query && router.query.id) {
+      setNftId(router.query.id);
+    }
   }, [router]);
   return (
     <div className="main-content flex justify-center">
