@@ -339,7 +339,6 @@ a {
 
 .subfooter {
     border-top: solid 1px rgba(255, 255, 255, .1);
-    margin-top: 40px;
     padding: 20px;
     background-color: #242358;
 }
@@ -423,7 +422,7 @@ footer a {
 
 .main-content {
     padding: 90px 20px;
-    min-height: calc(100vh - 213px);
+    min-height: calc(100vh - 184px);
 }
 
 .nft-video {
@@ -450,9 +449,16 @@ footer a {
     width: 100%;
 }
 
+.animate-spin {
+    margin: auto;
+}
+
 @media screen and (max-width: 767px) {
     .main-content {
         padding: 45px 20px;
+    }
+    .main-content .flex-col {
+        width: 100% !important;
     }
     .item_info {
         padding-left: 0;

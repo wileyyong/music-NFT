@@ -99,8 +99,6 @@ export default function Home() {
       const meta = await axios.get(tokenUri)
       let price = ethers.utils.formatUnits(i.price.toString(), 'ether')
       let commission = ethers.utils.formatUnits(i.commission.toString(), 'ether')
-      console.log(price)
-      console.log(commission)
       let item = {
         price,
         commission,
@@ -113,7 +111,7 @@ export default function Home() {
         music: meta.data.music,
       }
       return item
-    }))
+    }));
     setNfts(items);
     setLoadingState(false);
   }
