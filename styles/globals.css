@@ -4,6 +4,7 @@
 @tailwind utilities;
 @import "font-awesome/css/font-awesome.css";
 @import "icofont/icofont.min.css";
+@import 'react-notifications/lib/notifications.css';
 
 @import "custom";
 
